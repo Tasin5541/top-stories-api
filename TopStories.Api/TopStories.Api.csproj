@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\Pdfs\**" />
+    <Content Remove="wwwroot\Pdfs\**" />
+    <EmbeddedResource Remove="wwwroot\Pdfs\**" />
+    <None Remove="wwwroot\Pdfs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.10" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.9.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TopStories.Application\TopStories.Application.csproj" />
+    <ProjectReference Include="..\TopStories.Common\TopStories.Common.csproj" />
+    <ProjectReference Include="..\TopStories.DataContract\TopStories.DataContract.csproj" />
+    <ProjectReference Include="..\TopStories.Infrastructure\TopStories.Infrastructure.csproj" />
+    <ProjectReference Include="..\TopStories.Persistence\TopStories.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+
+</Project>
