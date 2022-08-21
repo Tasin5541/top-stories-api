@@ -10,8 +10,9 @@ API to mimic [NYT Top Stories API](https://developer.nytimes.com/docs/top-storie
 1. Clone/download repo
 2. Create a database named `NYTStories`
 3. Use the `top-stories-db-backup.sql` script to create the tables
-4. Open the `TopStoriesAPI.sln` file on VSCode or VS
-5. Run the project and go to `https://localhost:44392/api/index.html`
+4. Change the db `connectionstring` in `apsettings`
+5. Open the `TopStoriesAPI.sln` file on VSCode or VS
+6. Run the project and go to `https://localhost:44392/api/index.html`
 
 ## API Endpoints
 
