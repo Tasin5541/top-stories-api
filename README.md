@@ -1,6 +1,6 @@
 # Top Stories API
 
-API to mimic [NYT Top Stories API]("https://developer.nytimes.com/docs/top-stories-product/1/overview")
+API to mimic [NYT Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview)
 
 - **.Net Core** (3.x)
 - **SQL Server** (2019)
